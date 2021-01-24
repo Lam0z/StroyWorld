@@ -1,0 +1,153 @@
+.contacts__user
+   
+.user
+    display: block
+    padding-bottom: 30px
+    &__name
+        font-size: 21px
+        padding-right: 23%
+        padding: 15px 20% 15px 0
+        position: relative
+        &::after 
+            content: ''
+            position: absolute
+            display: inline-block
+            background: url(../img/icon-logout.svg) no-repeat center 
+            right: 0
+            top: 50%
+            transform: translateY(-50%)
+            width: 30px
+            height: 30px
+    &__information
+        display: flex
+        justify-content: space-around
+        align-items: center
+        
+    &__link
+        color: #32425c
+        font-size: 16px
+        font-weight: bold
+        // &:last-child
+        //     color: #ee3643  
+    & span
+        display: block
+        width: 4px
+        height: 5px
+        background-color: #32425c
+        border-radius: 100%
+.basket
+    padding: 30px 0 50px 0
+    color: #32425c
+    &__delType
+        margin-top: 20px
+        display: flex
+        width: 70%
+        
+        justify-content: space-around
+        
+    &__delVariant
+        margin: 0
+        padding: 20px
+        font-size: 23px
+        font-weight: bold
+        flex-basis: 100%
+        text-align: center
+        border-radius: 10px
+
+        &:hover
+            background: #32425c11
+        &:nth-child(1)
+            background: #32425c11
+
+    &__title
+        margin: 0
+        color: #32425c
+        font-size: 30px
+        text-transform: uppercase
+        font-weight: bold
+    &__delivery
+        // margin: 0
+        margin-top: 50px 
+        font-size: 20px
+.delivery
+    &__title
+        font-size: 23px
+    &__content
+        display: grid
+        grid-template-columns: 70% 30%
+        grid-template-rows: repeat(4,1fr)
+        column-gap: 10px
+        align-items: center
+
+    &__minPicture
+        width: 60px
+        height: 60px
+        background: url(../img/1.png)no-repeat center/cover
+    &__item
+        display: grid
+        grid-template-columns: 10% auto 10% auto auto 10%
+        column-gap: 4%
+        justify-items: center
+        align-items: center
+        border-bottom: 2px solid #32425c27
+        &:hover
+            border-color: #32425c
+    &__count
+        max-width: 100%
+        text-align: center
+    &__iPrice
+        display: flex
+        flex-direction: column
+        .iPrice
+            &__total
+                margin-bottom: 10px 
+    &__acceptOffer
+        grid-column: 2/3
+        grid-row: 1/4
+        padding: 30px
+        background: #32425c15
+    &__count
+        border: 2px solid #32425c
+        border-radius: 5px
+        outline-color: #32425c
+        &:focus
+            background: #32425c1c
+    &__delet
+        display: inline-block
+        width: 20px
+        height: 20px
+        background: url(../img/trash.svg) no-repeat center/cover
+    &__goodsCount
+        margin-bottom: 10px 
+        font-size: 15px
+        display: flex
+        justify-content: space-between
+        
+    &__goodsTotal
+        margin-bottom: 10px 
+        font-size: 20px
+        font-weight: bold
+        display: flex
+        justify-content: space-between
+    &__offerLink
+        text-decoration: none
+        color: white
+        background: #63a63e
+        display: inline-block
+        width: 100%
+        margin-top: 20px    
+        margin-bottom: 20px
+        padding: 15px 0
+        text-align: center
+        border-radius: 5px 
+        &:hover
+            background: darken(#63a63e,5%)
+        &:active
+            background: lighten(#63a63e,5%)
+
+    &__offerElse
+        font-size: 12px 
+
+
+
+        

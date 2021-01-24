@@ -1,0 +1,135 @@
+.user {
+  display: block;
+  padding-bottom: 30px;
+}
+
+.user__name {
+  font-size: 21px;
+  padding-right: 23%;
+  padding: 15px 20% 15px 0;
+  position: relative;
+}
+
+.user__name::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  background: url(../img/icon-logout.svg) no-repeat center;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+}
+
+.user__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user__link {
+  color: #32425c;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.user__link:last-child {
+  color: #ee3643;
+}
+
+.user span {
+  display: block;
+  width: 4px;
+  height: 5px;
+  background-color: #32425c;
+  border-radius: 100%;
+}
+
+.profile {
+  padding: 20px 0;
+}
+
+.profile__title {
+  color: #32425c;
+  font-family: Cuprum;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.profile__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  grid-auto-rows: 1fr;
+}
+
+.profile__avatar {
+  max-width: 50%;
+  grid-row: 1/-1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.profile span:nth-child(1) {
+  color: #32425c;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.profile span:nth-child(2) {
+  display: inline-block;
+  color: #32425c;
+  font-size: 20px;
+  padding: 5px;
+  border: 3px solid #c3dae6;
+  border-radius: 10px;
+  position: relative;
+}
+
+.profile span:nth-child(2):hover {
+  background: #c3dae6;
+}
+
+.profile__change::after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: white url(../img/pen.png) no-repeat center/cover;
+  position: absolute;
+  top: -10px;
+  right: -13px;
+  cursor: pointer;
+}
+
+.profile__save {
+  margin-top: 20px;
+  background: #63a63e;
+  display: inline-block;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  text-align: center;
+  padding: 15px;
+  max-width: 70%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=style.min.css.map */

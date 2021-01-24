@@ -1,0 +1,107 @@
+.contacts__user
+ 
+.user
+    
+    display: block
+    padding-bottom: 30px
+    &__name
+        font-size: 21px
+        padding-right: 23%
+        padding: 15px 20% 15px 0
+        position: relative
+        &::after 
+            content: ''
+            position: absolute
+            display: inline-block
+            background: url(../img/icon-logout.svg) no-repeat center 
+            right: 0
+            top: 50%
+            transform: translateY(-50%)
+            width: 30px
+            height: 30px
+    &__information
+        display: flex
+        justify-content: space-around
+        align-items: center
+        
+    &__link
+        color: #32425c
+        font-size: 16px
+        font-weight: bold
+        &:last-child
+            color: #ee3643  
+    & span
+        display: block
+        width: 4px
+        height: 5px
+        background-color: #32425c
+        border-radius: 100%
+.profile
+    padding: 20px 0
+    &__title
+        color: #32425c
+        font-family: Cuprum
+        font-size: 25px
+        text-transform: uppercase
+    
+    &__content
+        display: grid
+        grid-template-columns: 40% 60%
+        grid-template-rows: repeat(4,1fr)
+        grid-auto-rows: 1fr
+    &__info
+        // display: flex
+        // align-items: center
+        // flex-wrap: wrap
+        // justify-content: space-around   
+    &__avatar
+        // display: inline-block
+        max-width: 50%
+        grid-row: 1/-1
+        align-self: center
+        justify-self: center
+    
+    & span:nth-child(1)
+        color: #32425c
+        font-size: 20px
+        text-transform: uppercase
+    & span:nth-child(2)
+        // margin-left: 10px
+        display: inline-block
+        color: #32425c
+        font-size: 20px
+        padding: 5px 
+        border: 3px solid #c3dae6
+        border-radius: 10px
+        position: relative
+        &:hover
+            background: #c3dae6
+    &__change::after
+            content: ''
+            width: 15px
+            height: 15px
+            background: white url(../img/pen.png) no-repeat center/cover
+            position: absolute
+            top: -10px
+            right: -13px
+            cursor: pointer
+    &__save
+        margin-top: 20px
+        background: #63a63e
+        display: inline-block
+        grid-column: 2/3
+        text-align: center
+        padding: 15px
+        max-width: 70%
+        justify-self: center
+        text-transform: uppercase
+        text-decoration: none
+        font-size: 20px
+        color: white
+        border-radius: 10px
+
+            
+    
+        
+    
+    

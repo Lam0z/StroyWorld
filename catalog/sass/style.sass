@@ -1,0 +1,195 @@
+body 
+    // min-height: 100vh
+    display: grid
+    // grid-template-rows: repeat(3,auto) 1fr 
+    box-sizing: border-box
+    // background: lightgreen
+    position: relative
+    scroll-behavior: smooth
+
+.up-button
+    border-radius: 50%
+    border-color: GREEN
+    outline-color: none
+    display: none
+    width: 40px
+    height: 40px
+    font-size: 30px
+    font-weight: bold
+    color: green
+    position: fixed
+    right: 40px
+    bottom: 60px
+    box-shadow: 0 0 0 0 transparent
+.catalog
+    padding-top: 20px
+    .navigation
+        display: grid
+        grid-template-columns: repeat(3,1fr)
+        
+        &__list
+            padding: 0
+            padding-left: 20px
+            margin: 0
+            list-style-type: none
+            display: grid
+            grid-template-columns: repeat(4,auto)
+            gap: 20px
+            justify-items: start
+            a
+                text-decoration: none
+                text-transform: uppercase
+                position: relative
+                &::before
+                    content: ''
+                    
+                    position: absolute
+                    border: 5px solid transparent
+                    border-left: 5px solid #ee3643
+                    top: 50%
+                    left: -10px
+                    transform: translateY(-50%)
+                    
+    &__title
+        color: #32425c
+        font-size: 30px
+    &__sorts
+        font-size: 13px
+        display: grid
+        grid-template-columns: repeat(2,25%) repeat(2,15%) repeat(2,auto)
+        margin-bottom: 20px
+        // justify-items: center
+        @media screen and ( max-width: 575px )
+            grid-template-columns: repeat(2,25%) repeat(2,15%) repeat(2,1fr)
+    &__content
+        display: grid
+        grid-template-columns: auto 3fr
+        
+        gap: 10px
+        
+    &__filters
+        // grid-row: 1/-1
+    &__goods
+        grid-column: 2/3
+        display: grid
+        grid-template-columns: repeat(3,1fr)
+        padding-bottom: 80px
+        @media screen and ( max-width: 575px )
+            grid-template-columns: repeat(1,1fr)
+            
+    .range
+        margin-bottom: 25px
+        border-bottom: 1px solid #e5e5e5
+        padding-bottom: 20px
+    .filters
+
+
+        &__content-title
+            margin: 0
+            font-size: 17px
+            margin-bottom: 21px
+            font-weight: bold
+        input[type='range']
+            padding: 30px 0
+            width: 100%
+        &__btn
+            font-size: 13px
+            padding: 13px 40px
+            text-transform: uppercase
+            margin: 0 auto
+            border: none
+            &:hover
+                background: #58585846
+                color: white
+
+            
+        .outputs
+            display: flex
+            justify-content: space-around
+        .output
+            max-width: 95px
+            font-size: 20px
+            // flex-basis: 20%
+            text-align: center
+            padding: 15px 0
+            border: none
+            outline-color: green
+    .generators
+        &__list
+            display: flex
+            flex-direction: column
+            padding-left: 15px
+            border-bottom: 1px solid #e5e5e5
+            margin-bottom: 20px
+        &__item
+            margin-bottom: 17px 
+            font-size: 15px
+        label
+            font-size: 15px
+            display: flex
+            align-items: center
+            text-transform: uppercase
+        input[type='radio']
+            display: inline-block
+            width: 25px
+            height: 25px
+            margin-right: 10px
+            &:focus
+                outline-color: green
+    .power
+        &__list
+            display: flex
+            flex-direction: column
+            margin-bottom: 50px
+            label
+                font-size: 15px
+                display: flex
+                align-items: center
+                text-transform: uppercase
+                &:first-child
+                    margin-bottom: 17px 
+            input[type='radio']
+                display: inline-block
+                width: 25px
+                height: 25px
+                margin-right: 10px
+    .goods
+        gap: 2%
+        &__item
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__img
+            width: 100%
+            @media screen and ( max-width: 575px )
+                width: 80%
+                
+        &__title
+            margin: 0
+            margin-top: 12px
+            margin-bottom: 18px
+            font-size: 18px
+            font-weight: bold
+            text-align: center
+        &__price-old
+            margin: 0
+            margin-bottom: 15px
+            text-align: center
+            text-decoration: line-through
+            font-size: 17px
+            color: #999999
+        &__price
+            text-decoration: none
+            color: white
+            display: inline-block
+            padding: 13px 40px
+            background: #ee3643
+            border-radius: 5px
+            text-align: center
+        .offers__links
+            color: white
+                
+
+                
+                    
+

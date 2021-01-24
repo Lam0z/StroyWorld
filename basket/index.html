@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StroyWorld</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    
+</head>
+
+<body class="page">
+    <header class="header">
+        <div class="container">
+            <h2 class="header__title"><a href="../index.html" class="header__link-title">СТРОЙМИР</a></h2>
+            <form action="GET">
+                <input type="search" name="search" placeholder="Поиск:" value="">
+            </form>
+            <ul class="header__links">
+                <li class="header__link favorits">Закладки: <div class="favorits"></div>
+                </li>
+                <li class="header__link buys">Корзина: <div class="buys"></div>
+                </li>
+                <li class="header__link-offer">Оформить заказ </li>
+            </ul>
+
+
+    </header>
+    <section class="contacts">
+        <div class="container">
+            <p class="contacts__promo">Интернет-магазин
+                строительных материалов
+                и инструментов для ремонта</p>
+            <div class="contacts__info">
+                <a href="tel:+7 (3854) 33 22 11" class="contacts__tel">+7 (3854) 555-05-55</a>
+                <p class="contacts__address">г. Бийск, ул. Яминская, д. 31</p>
+            </div>
+            <div class="contacts__user user">
+                <p class="user__name">Равшан Джамшутович</p>
+                <div class="user__information">
+                    <a class="user__link" href="#">Мои заказы</a>
+                    <span></span>
+                    <a class="user__link" href="../profile/index.html">Личный кабинет</a>
+                </div>
+            </div>
+        </div>
+
+      
+
+      
+
+    </section>
+    <nav class="main__nav nav">
+        <div class="container">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="../index.html" class="nav__link">Главная</a></li>
+                <li class="nav__item"><a href="../index.html" class="nav__link">Компания</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
+                <li class="nav__item"><a href="../index.html" class="nav__link">Новости</a></li>
+                <li class="nav__item"><a href="../index.html" class="nav__link">Спецпредложения</a></li>
+                <li class="nav__item"><a href="../index.html" class="nav__link">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="basket">
+        <div class="container">
+            <h2 class="basket__title">Корзина</h2>
+            <div class="basket__delType">
+                <p class="basket__delVariant">Доставка</p>
+                <p class="basket__delVariant">Самовывоз</p>
+            </div>
+            <div class="basket__delivery delivery">
+                <h3 class="delivery__title">Доставка</h3>
+                <div class="delivery__content">
+                    <div class="delivery__item">
+                        <img src="img/2.png" class="delivery__minPicture"></img>
+                        <p class="delivery__name">Панель ПВХ Белая сосна 5 мм 2700х250 мм 0.675 м2</p>
+                        
+                        <input type="text" class="delivery__count" value="8">
+                        <span class="delivery__desc">шт.</span>
+                        <div class="delivery__iPrice iPrice">
+                            <span class="iPrice__total">1184 р.</span>
+                            <span class="iPrice__perCount">148 р./шт.
+                            </span>
+                        </div>
+                        <span class="delivery__delet"></span>
+                    </div>
+                    <div class="delivery__item"><img src="img/1.png" class="delivery__minPicture"></img>
+                        <p class="delivery__name">Профнастил С8 0.35 мм 1200х2000 мм зелёный RAL 6005</p>
+                        
+                        <input type="text" class="delivery__count" value="8">
+                        <span class="delivery__desc">шт.</span>
+                        <div class="delivery__iPrice iPrice">
+                            <span class="iPrice__total">2 240 р.</span>
+                            <span class="iPrice__perCount">280 р./шт.
+                            </span>
+                        </div>
+                        <span class="delivery__delet"></span>
+                    </div>
+                    <div class="delivery__item">
+                        <img src="img/3.jpg" class="delivery__minPicture"></img>
+                        <p class="delivery__name">Труба профильная 40х20х1.5x3000 мм</p>
+                        
+                        <input type="text" class="delivery__count" value="10">
+                        <span class="delivery__desc">шт.</span>
+                        <div class="delivery__iPrice iPrice">
+                            <span class="iPrice__total">2840 р.</span>
+                            <span class="iPrice__perCount">284 р./шт.
+                            </span>
+                        </div>
+                        <span class="delivery__delet"></span>
+                    </div>
+                    <div class="delivery__item">
+                        <img src="img/4.jpg" class="delivery__minPicture"></img>
+                        <p class="delivery__name">Перфоратор  Dexter Z1C-DS-24GM, 750 Вт, 2.5 Дж</p>
+                        
+                        <input type="text" class="delivery__count" value="1">
+                        <span class="delivery__desc">шт.</span>
+                        <div class="delivery__iPrice iPrice">
+                            <span class="iPrice__total">3042 р.</span>
+                            <span class="iPrice__perCount" >3042  р./шт.
+                            </span>
+                        </div>
+                        <span class="delivery__delet"></span>
+                    </div>
+                    <div class="delivery__acceptOffer">
+                        <div class="delivery__goodsCount"> 
+                            <span>Товары (4)</span>
+                        <span>9306 р.</span>
+                        </div>
+                        <div class="delivery__goodsTotal"> 
+                            <span>Итого
+                            </span>
+                        <span>9306 р.</span>
+                        </div>
+                        <a href="../offer/index.html" class="delivery__offerLink">Оформить доставку</a>
+
+                        <span class="delivery__offerElse">Дата и стоимость доставки определяются при оформлении заказа</span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </section>
+ 
+
+
+    <section class="links">
+        <div class="container">
+            <div class="links__up up">
+                <h2 class="links__title"><a href="../index.html" class=" links__link-title">СТРОЙМИР</a></h2>
+                <nav class=" links__nav links__nav-up">
+                    <a href="../index.html">Компания</a>
+                    <a href="../index.html">Новости</a>
+                    <a href="../catalog/index-catalog.html">Каталог</a>
+                    <a href="../index.html">Доставка</a>
+                    <a href="../index.html">Контакты</a>
+                </nav>
+                <p class="links__address">
+                    г. Бийск, ул. Яминская, д. 31
+                    +7 (812) 555-05-55</p>
+                <nav class="links__nav links__nav-down">
+                    <a href="#">Материалы</a>
+                    <a href="#">Техника</a>
+                    <a href="#">Инструмент</a>
+                    <a href="#">Спецпредложения</a>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__down">
+                <div class="footer__copy">
+                    &copy; 2010–2019 Компания «Техномарт» <br>
+                    Все права защищены
+                </div>
+                <div class="footer__social">
+                    <a href="#" class="footer__link"></a>
+                    <a href="#" class="footer__link"></a>
+                    <a href="#" class="footer__link"></a>
+                </div>
+                <p class="footer__email">Обратная связь: <br>
+                    <span>lamoz760@gmail.com</span></p>
+                <p class="footer__dev">Разработано — <br>
+                    <span> Nick Efimov</span></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <div class="form form-offer">
+        <div class="form__container">
+            <form action="GET">
+                <label for="adress">Адрес доставки</label>
+                <input type="text" id="adress">
+
+                <label for="tel">Телефон для связи</label>
+                <input type="number" id="tel">
+                <button type="submit" disabled>Заказать</button>
+            </form>
+        </div>
+    </div> -->
+    
+    <!-- <button class="up-button " type="button">
+        ↑
+      </button> -->
+      
+    <script src="js/buttonUp.js"></script>
+    <script src="js/sort.js"></script>
+</body>
+
+</html>

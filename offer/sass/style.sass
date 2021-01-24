@@ -1,0 +1,235 @@
+.contacts__user
+   
+.user
+    
+    display: block
+    padding-bottom: 30px
+    &__name
+        font-size: 21px
+        padding-right: 23%
+        padding: 15px 20% 15px 0
+        position: relative
+        &::after 
+            content: ''
+            position: absolute
+            display: inline-block
+            background: url(../img/icon-logout.svg) no-repeat center 
+            right: 0
+            top: 50%
+            transform: translateY(-50%)
+            width: 30px
+            height: 30px
+    &__information
+        display: flex
+        justify-content: space-around
+        align-items: center
+        
+    &__link
+        color: #32425c
+        font-size: 16px
+        font-weight: bold
+        // &:last-child
+        //     color: #ee3643  
+    & span
+        display: block
+        width: 4px
+        height: 5px
+        background-color: #32425c
+        border-radius: 100%
+.basket
+    padding: 30px 0 50px 0
+    color: #32425c
+    &__delType
+        margin-top: 20px
+        display: flex
+        width: 70%
+        
+        justify-content: space-around
+        
+    &__delVariant
+        margin: 0
+        padding: 20px
+        font-size: 23px
+        font-weight: bold
+        flex-basis: 100%
+        text-align: center
+        border-radius: 10px
+
+        &:hover
+            background: #32425c11
+        &:nth-child(1)
+            background: #32425c11
+
+    &__title
+        margin: 0
+        color: #32425c
+        font-size: 30px
+        text-transform: uppercase
+        font-weight: bold
+    &__delivery
+        // margin: 0
+        margin-top: 50px 
+        font-size: 20px
+    &__subtitle
+        font-size: 25px
+.delivery
+   
+    &__acceptOffer
+        grid-column: 2/3
+        grid-row: 1/-1
+        padding: 30px
+        background: #32425c15
+        align-content: center
+    &__count
+        border: 2px solid #32425c
+        border-radius: 5px
+        outline-color: #32425c
+        &:focus
+            background: #32425c1c
+    &__delet
+        display: inline-block
+        width: 20px
+        height: 20px
+        background: url(../img/trash.svg) no-repeat center/cover
+    &__goodsCount
+        margin-bottom: 10px 
+        font-size: 15px
+        display: flex
+        justify-content: space-between
+        
+    &__goodsTotal
+        margin-bottom: 10px 
+        font-size: 20px
+        font-weight: bold
+        display: flex
+        justify-content: space-between
+    &__offerLink
+        text-decoration: none
+        color: white
+        background: #63a63e
+        display: inline-block
+        width: 100%
+        margin-top: 20px    
+        margin-bottom: 20px
+        padding: 15px 0
+        text-align: center
+        border-radius: 5px 
+        &:hover
+            background: darken(#63a63e,5%)
+        &:active
+            background: lighten(#63a63e,5%)
+
+    &__offerElse
+        font-size: 12px 
+.offer
+    margin-top: 20px
+    display: grid
+    grid-template-columns: 70% 30%
+    &__profileData
+        display: grid
+        grid-template-columns: 80%
+    label
+        display: flex
+        flex-direction: column
+        color: #00000077
+        margin-top: 20px
+    input
+        padding: 10px
+        color: #32425c
+        // font-weight: bold
+        border: none
+        font-size: 20px
+        border-bottom: 1px solid #32425c36
+    &__imgContent
+        position: relative
+    &__goodsContent
+        display: grid
+        grid-template-columns: repeat(4,70px)
+        grid-template-rows: 70px
+        column-gap: 10px
+        span
+            position: absolute
+            top: 0
+            left: 0 
+            display: inline-block
+            width: 17px
+            height: 17px
+            font-weight: bold
+            border-radius: 100%
+            background: #000000b4
+            color: white
+            text-align: center
+            box-shadow: 1px 1px 1px 1px white, -1px -1px 1px 1px
+
+            // display: flex
+            // justify-content: space-between
+            // align-items: center   
+     
+    
+        
+        img
+            max-width: 100%
+            position: relative
+            
+            // &::before  
+            //     position: absolute
+            //     top: 0
+            //     left: 0
+            //     content: 'aaaaaaaaaaaaa'
+            //     width: 30px
+            //     height: 40px
+            //     background: #000
+    &__pays
+        display: flex
+        // display: grid
+        // grid-template-columns: repeat(2,1fr)
+        // justify-content: center
+    &__paymentBlock
+        font-weight: bold
+        width: 40%
+        padding: 20px 20px
+        // background: #32425c36
+        border: 1px solid #000
+        margin-right: 20px
+        border: 3px solid #32425c
+        border-radius: 5px
+        // flex-basis: 50%
+        // background:  #32425c28
+        &:hover
+            background:  white
+        &:nth-child(2)
+            display: flex
+            background:  #32425c28
+            border: 1px solid #32425c0e
+            // flex-direction: column
+            align-items: center
+            justify-content: center
+    &__payTitle
+        font-size: 20px
+        text-align: center
+        margin: 0
+        margin-bottom: 10px
+    &__payImgs
+        display: grid
+        gap: 10px
+        grid-template-columns: repeat(3,auto)
+        grid-template-rows: repeat(1,40px)
+        
+        span
+            background: url(../img/VVisa.png) no-repeat center/cover
+            &:nth-child(2)
+                background: url(../img/mastercard.jpg) no-repeat center/cover
+            &:nth-child(3)
+                background: url(../img/MNP.jpg) no-repeat center/cover
+                
+                
+
+.offer .subscription
+    display: flex
+    flex-direction: row
+    input[type="checkbox"]
+        margin-right: 10px
+        display: inline-block
+        
+            
+

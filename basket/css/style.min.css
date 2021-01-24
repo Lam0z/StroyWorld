@@ -1,0 +1,234 @@
+.user {
+  display: block;
+  padding-bottom: 30px;
+}
+
+.user__name {
+  font-size: 21px;
+  padding-right: 23%;
+  padding: 15px 20% 15px 0;
+  position: relative;
+}
+
+.user__name::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  background: url(../img/icon-logout.svg) no-repeat center;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+}
+
+.user__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user__link {
+  color: #32425c;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.user span {
+  display: block;
+  width: 4px;
+  height: 5px;
+  background-color: #32425c;
+  border-radius: 100%;
+}
+
+.basket {
+  padding: 30px 0 50px 0;
+  color: #32425c;
+}
+
+.basket__delType {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.basket__delVariant {
+  margin: 0;
+  padding: 20px;
+  font-size: 23px;
+  font-weight: bold;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.basket__delVariant:hover {
+  background: #32425c11;
+}
+
+.basket__delVariant:nth-child(1) {
+  background: #32425c11;
+}
+
+.basket__title {
+  margin: 0;
+  color: #32425c;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.basket__delivery {
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.delivery__title {
+  font-size: 23px;
+}
+
+.delivery__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.delivery__minPicture {
+  width: 60px;
+  height: 60px;
+  background: url(../img/1.png) no-repeat center/cover;
+}
+
+.delivery__item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% auto 10% auto auto 10%;
+      grid-template-columns: 10% auto 10% auto auto 10%;
+  -webkit-column-gap: 4%;
+          column-gap: 4%;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 2px solid #32425c27;
+}
+
+.delivery__item:hover {
+  border-color: #32425c;
+}
+
+.delivery__count {
+  max-width: 100%;
+  text-align: center;
+}
+
+.delivery__iPrice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.delivery__iPrice .iPrice__total {
+  margin-bottom: 10px;
+}
+
+.delivery__acceptOffer {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/4;
+  padding: 30px;
+  background: #32425c15;
+}
+
+.delivery__count {
+  border: 2px solid #32425c;
+  border-radius: 5px;
+  outline-color: #32425c;
+}
+
+.delivery__count:focus {
+  background: #32425c1c;
+}
+
+.delivery__delet {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../img/trash.svg) no-repeat center/cover;
+}
+
+.delivery__goodsCount {
+  margin-bottom: 10px;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.delivery__goodsTotal {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.delivery__offerLink {
+  text-decoration: none;
+  color: white;
+  background: #63a63e;
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.delivery__offerLink:hover {
+  background: #589337;
+}
+
+.delivery__offerLink:active {
+  background: #6eb945;
+}
+
+.delivery__offerElse {
+  font-size: 12px;
+}
+/*# sourceMappingURL=style.min.css.map */

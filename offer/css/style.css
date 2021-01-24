@@ -1,0 +1,326 @@
+.user {
+  display: block;
+  padding-bottom: 30px;
+}
+
+.user__name {
+  font-size: 21px;
+  padding-right: 23%;
+  padding: 15px 20% 15px 0;
+  position: relative;
+}
+
+.user__name::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  background: url(../img/icon-logout.svg) no-repeat center;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+}
+
+.user__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user__link {
+  color: #32425c;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.user span {
+  display: block;
+  width: 4px;
+  height: 5px;
+  background-color: #32425c;
+  border-radius: 100%;
+}
+
+.basket {
+  padding: 30px 0 50px 0;
+  color: #32425c;
+}
+
+.basket__delType {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.basket__delVariant {
+  margin: 0;
+  padding: 20px;
+  font-size: 23px;
+  font-weight: bold;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.basket__delVariant:hover {
+  background: #32425c11;
+}
+
+.basket__delVariant:nth-child(1) {
+  background: #32425c11;
+}
+
+.basket__title {
+  margin: 0;
+  color: #32425c;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.basket__delivery {
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.basket__subtitle {
+  font-size: 25px;
+}
+
+.delivery__acceptOffer {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  grid-row: 1/-1;
+  padding: 30px;
+  background: #32425c15;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.delivery__count {
+  border: 2px solid #32425c;
+  border-radius: 5px;
+  outline-color: #32425c;
+}
+
+.delivery__count:focus {
+  background: #32425c1c;
+}
+
+.delivery__delet {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../img/trash.svg) no-repeat center/cover;
+}
+
+.delivery__goodsCount {
+  margin-bottom: 10px;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.delivery__goodsTotal {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.delivery__offerLink {
+  text-decoration: none;
+  color: white;
+  background: #63a63e;
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.delivery__offerLink:hover {
+  background: #589337;
+}
+
+.delivery__offerLink:active {
+  background: #6eb945;
+}
+
+.delivery__offerElse {
+  font-size: 12px;
+}
+
+.offer {
+  margin-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
+}
+
+.offer__profileData {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80%;
+      grid-template-columns: 80%;
+}
+
+.offer label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #00000077;
+  margin-top: 20px;
+}
+
+.offer input {
+  padding: 10px;
+  color: #32425c;
+  border: none;
+  font-size: 20px;
+  border-bottom: 1px solid #32425c36;
+}
+
+.offer__imgContent {
+  position: relative;
+}
+
+.offer__goodsContent {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (70px)[4];
+      grid-template-columns: repeat(4, 70px);
+  -ms-grid-rows: 70px;
+      grid-template-rows: 70px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.offer__goodsContent span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  font-weight: bold;
+  border-radius: 100%;
+  background: #000000b4;
+  color: white;
+  text-align: center;
+  -webkit-box-shadow: 1px 1px 1px 1px white, -1px -1px 1px 1px;
+          box-shadow: 1px 1px 1px 1px white, -1px -1px 1px 1px;
+}
+
+.offer__goodsContent img {
+  max-width: 100%;
+  position: relative;
+}
+
+.offer__pays {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.offer__paymentBlock {
+  font-weight: bold;
+  width: 40%;
+  padding: 20px 20px;
+  border: 1px solid #000;
+  margin-right: 20px;
+  border: 3px solid #32425c;
+  border-radius: 5px;
+}
+
+.offer__paymentBlock:hover {
+  background: white;
+}
+
+.offer__paymentBlock:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #32425c28;
+  border: 1px solid #32425c0e;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.offer__payTitle {
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.offer__payImgs {
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  -ms-grid-rows: (40px)[1];
+      grid-template-rows: repeat(1, 40px);
+}
+
+.offer__payImgs span {
+  background: url(../img/VVisa.png) no-repeat center/cover;
+}
+
+.offer__payImgs span:nth-child(2) {
+  background: url(../img/mastercard.jpg) no-repeat center/cover;
+}
+
+.offer__payImgs span:nth-child(3) {
+  background: url(../img/MNP.jpg) no-repeat center/cover;
+}
+
+.offer .subscription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.offer .subscription input[type="checkbox"] {
+  margin-right: 10px;
+  display: inline-block;
+}
+/*# sourceMappingURL=style.css.map */

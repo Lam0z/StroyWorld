@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StroyWorld</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css.map">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <h2 class="header__title"><a href="index.html" class="header__link-title">СТРОЙМИР</a></h2>
+      <form action="GET">
+        <input type="search" name="search" placeholder="Поиск:" value="">
+      </form>
+      <ul class="header__links">
+        <li class="header__link favorits">Закладки: <div class="favorits"></div>
+        </li>
+        <li class="header__link buys">Корзина: <div class="buys"></div>
+        </li>
+        <li class="header__link-offer">Оформить заказ </li>
+      </ul>
+  </header>
+  
+  <section class="contacts">
+    <div class="container">
+      <p class="contacts__promo">Интернет-магазин
+        строительных материалов
+        и инструментов для ремонта</p>
+      <div class="contacts__info">
+        <a href="tel:+7 (3854) 33 22 11" class="contacts__tel">+7 (3854) 555-05-55</a>
+        <p class="contacts__address">г. Бийск, ул. Яминская, д. 31</p>
+      </div>
+      <div class="contacts__user">
+        <a href="#" class="contacts__logIn btn">Войти</ф>
+          <a href="#" class="contacts__signIn btn">Регистрация</a>
+      </div>
+    </div>
+
+    <!-- //forms registration -->
+
+    <div class="contacts__form form logIn">
+      <div class="form__container">
+        <form action="POST">
+          <label for="name">Имя</label>
+          <input type="text" id="name">
+          <label for="pas">Пароль</label>
+          <input type="password" id="pas">
+          <button type="submit" disabled>Войти</button>
+        </form>
+      </div>
+    </div>
+    <div class="contacts__form form signIn">
+      <div class="form__container">
+        <form action="POST">
+          <label for="name1">Имя</label>
+          <input type="text" id="name1">
+          <label for="email2">Email</label>
+          <input type="email" id="email2">
+          <label for="regPhone">Телефон</label>
+          <input type="phone" id="regPhone">
+          <label for="regAdres">Адрес доставки</label>
+          <input type="password" id="regAdres">
+          <label for="regPas">Пароль</label>
+          <input type="password" id="regPas">
+          <button type="submit" disabled>Зарегистрировать</button>
+        </form>
+      </div>
+    </div>
+    <!-- //log in -->
+
+  </section>
+  <nav class="main__nav nav">
+    <div class="container">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Компания</a></li>
+        <li class="nav__item"><a href="catalog/index-catalog.html" class="nav__link">Каталог</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Новости</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Спецпредложения</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="categories">
+    <div class="container">
+      <div class="categories__content content">
+        <div class="content__item">
+          <h3 class="content__title">Материалы
+          </h3>
+          <a href="mainCatalog/index.html" class="content__link">на любой вкус</a>
+          <img class="content__img" src="img/categories1.svg" alt="categoriesImg">
+        </div>
+        <div class="content__item">
+          <h3 class="content__title">Инструмент
+
+          </h3>
+          <a href="item/index.html" class="content__link">НА ВСЕ СЛУЧАИ</a>
+          <img class="content__img" src="img/categories2.svg" alt="categoriesImg">
+        </div>
+        <div class="content__item">
+          <h3 class="content__title">Техника
+          </h3>
+          <a href="#" class="content__link">для стройки</a>
+          <img class="content__img" src="img/categories3.svg" alt="categoriesImg">
+        </div>
+        <div class="content__item slider">
+          <h3 class="content__title">Дрели</h3>
+          <p class="content__subtitle">Соседям на радость!</p>
+          <a href="catalog/index-catalog.html" class="content__link">ОТКРЫТЬ КАТАЛОГ</a>
+          <!-- <img   class="content__img" src="img/categories2.svg" alt="categoriesImg"> -->
+        </div>
+        <div class="content__item">
+          <h3 class="content__title">Скидки 50%
+
+          </h3>
+          <a href="#" class="content__link">На 350 ТОВАРОВ</a>
+          <img class="content__img" src="img/categories4.svg" alt="categoriesImg">
+        </div>
+        <div class="content__item">
+          <h3 class="content__title">Доставка
+
+          </h3>
+          <a href="#" class="content__link">бесплатно</a>
+          <img class="content__img" src="img/categories5.svg" alt="categoriesImg">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="populars">
+    <div class="container">
+      <div class="populars__products ">
+        <div class="populars__title">
+          <h3 class="populars__promo">Популярные товары:
+          </h3>
+          <a href="catalog/index-catalog.html" class="populars__link">все поПулярные товары</a>
+        </div>
+        <div class="populars__content">
+
+          <div class="populars__item item">
+            <img class="item__img" src="img/p1.png"></img>
+            <div class="item__btns">
+              <a href="#" class="item__link buy">КУПИТЬ</a>
+              <a href="#" class="item__link favorite">В закладки</a>
+            </div>
+            <div class="item__info">
+
+              <p class="item__title">Перфоратор BOSCH
+                BFG 9000</p>
+              <span class="item__price-old">32500 Р.</span>
+              <a href="#" class="item__price">25500 Р.</a>
+            </div>
+          </div>
+          <div class="populars__item item">
+            <img class="item__img" src="img/p2.png"></img>
+            <div class="item__btns">
+              <a href="#" class="item__link buy">КУПИТЬ</a>
+              <a href="#" class="item__link favorite">В закладки</a>
+            </div>
+            <div class="item__info">
+              <p class="item__title">Перфоратор BOSCH
+                BFG 3000</p>
+              <span class="item__price-old">32500 Р.</span>
+              <a href="#" class="item__price">25500 Р.</a>
+            </div>
+          </div>
+          <div class="populars__item item">
+            <img class="item__img" src="img/p3.png"></img>
+            <div class="item__btns">
+              <a href="#" class="item__link buy">КУПИТЬ</a>
+              <a href="#" class="item__link favorite">В закладки</a>
+            </div>
+            <div class="item__info">
+              <p class="item__title">Перфоратор BOSCH
+                BFG 6000</p>
+              <span class="item__price-old">32500 Р.</span>
+              <a href="#" class="item__price">15500 Р.</a>
+            </div>
+          </div>
+          <div class="populars__item item">
+            <img class="item__img" src="img/p4.png"></img>
+            <div class="item__btns">
+              <a href="#" class="item__link buy">КУПИТЬ</a>
+              <a href="#" class="item__link favorite">В закладки</a>
+            </div>
+            <div class="item__info">
+              <p class="item__title">Перфоратор BOSCH
+                BFG 2000</p>
+              <span class="item__price-old">32500 Р.</span>
+              <a href="#" class="item__price">12500 Р.</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="populars__products ">
+        <div class="populars__title">
+          <h3 class="populars__promo">Популярные товары:
+          </h3>
+          <a href="catalog/index-catalog.html" class="populars__link">все поПулярные товары</a>
+        </div>
+        <!-- <div class="populars__content"> -->
+
+
+        <div class="populars__corp corp">
+          <img class="corp__logo" src="img/t1.png"></img>
+          <img class="corp__logo" src="img/t2.png"></img>
+          <img class="corp__logo" src="img/t3.png"></img>
+          <img class="corp__logo" src="img/t4.png"></img>
+          <img class="corp__logo" src="img/t5.png"></img>
+          <img class="corp__logo" src="img/t6.png"></img>
+          <img class="corp__logo" src="img/t7.png"></img>
+          <img class="corp__logo" src="img/t8.png"></img>
+
+        </div>
+        <!-- </div> -->
+      </div>
+  </section>
+
+  <section class="services">
+    <div class="container">
+      <div class="services__promo">
+        <h3 class="services__title">
+          Сервисы
+        </h3>
+        <p class="services__subtitle">
+          Хороший интернет-магазин отличается от плохого не только ценами! <br>
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+        </p>
+      </div>
+      <div class="services__content">
+        <ul class="services__list">
+          <li class="services__item" data-services="delivery">Доставка</li>
+          <li class="services__item" data-services="warranty">Гарантия</li>
+          <li class="services__item" data-services="credit">Кредит</li>
+        </ul>
+        <div class="services__descr descr " data-services="delivery">
+          <h4 class="descr__title">Доставка</h4>
+          <p class="descr__subtitle">
+
+            Мы с удовольствием доставим ваш товар прямо
+            к вашему подъезду совершенно бесплатно!
+            Ведь мы неплохо заработаем,
+            поднимая его на ваш этаж!</p>
+        </div>
+        <div class="services__descr descr hidden" data-services="warranty">
+          <h4 class="descr__title">Гарантия</h4>
+          <p class="descr__subtitle">
+
+            Предоставляя гарантию, продавец или производитель берёт на себя ответственность за качество потребительских
+            свойств и функционирование товара в течение определённого срока.</p>
+        </div>
+        <div class="services__descr descr hidden" data-services="credit">
+          <h4 class="descr__title ">Кредит</h4>
+          <p class="descr__subtitle">
+
+            Для оформления покупки в кредит вам нужен только паспорт. Обращайтесь к представителям СтройМир в торговой
+            точке и приобретайте понравившийся товар.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="company">
+    <div class="container">
+      <div class="company__about">
+        <h3 class="company__title">Компания «СтройМир»</h3>
+        <p class="company__text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
+          строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+        <p class="company__text">Мы можем доставить ваш товар в самые отдаленные точки России!
+          Техномарт работает со многими транспортными компаниями: </p>
+        <ul class="company__list">
+          <li class="company__item">Деловые линии</li>
+          <li class="company__item">Автотрейдинг</li>
+          <li class="company__item">ЖелДорЭкспедиция</li>
+        </ul>
+        <a href="#" class="company__link">Подробнее о компании</a>
+      </div>
+      <div class="company__contacts">
+        <h3 class="company__title">Контакты</h3>
+        <p class="company__text">Вы можете забрать товар сами,
+          заехав в наш офис:</p>
+        <img src="img/place.PNG" alt="company__place" class="company__place">
+        <a href="#" class="company__link">Заблудились? НапиШИТЕ НАМ!</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="links">
+    <div class="container">
+      <div class="links__up up">
+        <h2 class="links__title"><a href="#" class=" links__link-title">СТРОЙМИР</a></h2>
+        <nav class=" links__nav links__nav-up">
+          <a href="#">Компания</a>
+          <a href="#">Новости</a>
+          <a href="catalog/index-catalog.html">Каталог</a>
+          <a href="#">Доставка</a>
+          <a href="#">Контакты</a>
+        </nav>
+        <p class="links__address">
+          г. Бийск, ул. Яминская, д. 31
+          +7 (812) 555-05-55</p>
+        <nav class="links__nav links__nav-down">
+          <a href="#">Материалы</a>
+          <a href="#">Техника</a>
+          <a href="#">Инструмент</a>
+          <a href="#">Спецпредложения</a>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__down">
+        <div class="footer__copy">
+          &copy; 2010–2019 Компания «СтройМир» <br>
+          Все права защищены
+        </div>
+        <div class="footer__social">
+          <a href="#" class="footer__link"></a>
+          <a href="#" class="footer__link"></a>
+          <a href="#" class="footer__link"></a>
+        </div>
+        <p class="footer__email">Обратная связь: <br>
+          <span>lamoz760@gmail.com</span></p>
+        <p class="footer__dev">Разработано — <br>
+          <span> Nick Efimov</span></span></p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="form form-offer">
+    <div class="form__container">
+      <form action="GET">
+        <label for="adress">Адрес доставки</label>
+        <input type="text" id="adress">
+        <label for="tel">Телефон для связи</label>
+        <input type="number" id="tel">
+        <button type="submit" disabled>Заказать</button>
+      </form>
+    </div>
+  </div>
+  <!-- <button class="up-button " type="button">
+    ↑
+
+  </button> -->
+  <script src="catalog/js/buttonUp.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

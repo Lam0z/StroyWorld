@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StroyWorld</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="../basket/css/style.css">
+    
+</head>
+
+<body class="page">
+    <header class="header">
+        <div class="container">
+            <h2 class="header__title"><a href="../index.html" class="header__link-title">СТРОЙМИР</a></h2>
+            <form action="GET">
+                <input type="search" name="search" placeholder="Поиск:" value="">
+            </form>
+            <ul class="header__links">
+                <li class="header__link favorits">Закладки: <div class="favorits"></div>
+                </li>
+                <li class="header__link buys">Корзина:<div class="buys"></div>
+                </li>
+                <li class="header__link-offer">Оформить заказ: </li>
+            </ul>
+
+
+    </header>
+    <section class="contacts">
+        <div class="container">
+            <p class="contacts__promo">Интернет-магазин
+                строительных материалов
+                и инструментов для ремонта</p>
+            <div class="contacts__info">
+                <a href="tel:+7 (3854) 33 22 11" class="contacts__tel">+7 (3854) 555-05-55</a>
+                <p class="contacts__address">г. Бийск, ул. Яминская, д. 31</p>
+            </div>
+            <div class="contacts__user user">
+                <p class="user__name">Равшан Джамшутович</p>
+                <div class="user__information">
+                    <a class="user__link" href="../basket/index.html">Мои заказы</a>
+                    <span></span>
+                    <a class="user__link" href="../profile/index.html">Личный кабинет</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- //forms registration -->
+
+        <div class="contacts__form form logIn">
+            <div class="form__container">
+                <form action="POST">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name">
+
+                    <label for="pas">Пароль</label>
+                    <input type="password" id="pas">
+                    <button type="submit" disabled>Войти</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="contacts__form form signIn">
+            <div class="form__container">
+                <form action="POST">
+                    <label for="name1">Имя</label>
+                    <input type="text" id="name1">
+                    <label for="email2">Email</label>
+                    <input type="email" id="email2">
+                    <label for="pas2">Пароль</label>
+                    <input type="password" id="pas2">
+                    <button type="submit" disabled>Зарегистрировать</button>
+                </form>
+            </div>
+
+        </div>
+        <!-- //log in -->
+
+    </section>
+    <nav class="main__nav nav">
+        <div class="container">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="../index.html" class="nav__link">Главная</a></li>
+                <li class="nav__item"><a href="../index.html" class="nav__link">Компания</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
+                <li class="nav__item"><a href="../index.html" class="nav__link">Новости</a></li>
+                <li class="nav__item"><a href="../index.html" class="nav__link">Спецпредложения</a></li>
+                <li class="nav__item"><a href="../index.html" class="nav__link">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="catalog">
+        <div class="container">
+            <nav class="catalog__nav navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__link">
+                        <a href="#"> Каталог</a>
+                    </li>
+                    <li class="navigation__link">
+                        <a href="#">Инструмент</a>
+                    </li>
+                    <li class="navigation__link">
+                        <a href="#">Перфораторы</a>
+                    </li>
+                </ul>
+            </nav>
+            <h2 class="catalog__title">ПЕРФОРАТОРЫ
+            </h2>
+            <div class="catalog__sorts filters">
+                <a href="" class="filters__link">ФИЛЬТР:</a>
+                <a href="" class="filters__link">СОРТИРОВКА:</a>
+                <a href="" class="filters__link">ПО ЦЕНЕ</a>
+                <a href="" class="filters__link">ПО ТИПУ</a>
+                <a href="" class="filters__link">ПО ФУНКЦИОНАЛУ</a>
+                </div>
+            <div class="catalog__content">
+                <div class="catalog__filters filters">
+                    <div class="filters__instruments">
+
+                        <form action="POST" class="filters__form ">
+                            <div class="filters__content range">
+                                <p class="filters__content-title">
+                                    ЦЕНА:
+                                </p>
+                                <input type="range"  min="0" max="100000" step="5000">
+                                <div class="outputs">
+                                    <input class="output" value="0" disabled> 
+                                    <span class="output">-</span> 
+                                    <input class="output" value="30000">
+                                </div>
+                            </div>
+                            <div class="filters__generators generators">
+                                <p class="filters__content-title">
+                                    ПРОИЗВОДИТЕЛИ:
+                                </p>
+                                <div class="generators__list">
+
+                                    <label class="generators__item "><input type="radio" name="generation" value="bosh"> BOSCH</label>
+                                    <label class="generators__item "><input type="radio" name="generation" value="interskol"> ИНТЕРСКОЛ</label>
+                                    <label class="generators__item "><input type="radio" name="generation" value="makita"> MAKIta</label>
+                                    <label class="generators__item "><input type="radio" name="generation" value="dewalt"> Dewalt</label>
+                                    <label class="generators__item "><input type="radio" name="generation" value="hitachi"> Hitachi</label>
+                                    <label class="generators__item "><input type="radio" name="generation" value="all" checked> Показать всё</label>
+                                </div>
+                            </div>
+                            <!-- <div class="filter__power power">
+                                <p class="filters__content-title">ПИТАНИЕ:</p>
+                                <div class="power__list">
+                                    <label><input type="radio" name="power" value="battery"> Аккумуляторные</label>
+                                    <label><input type="radio" name="power" value="net"> Сетевые</label>
+                                </div>
+                            </div> -->
+                            <input class="filters__btn" type="submit" value="Показать" disabled>
+                        </form>
+                    </div>
+                        
+                       
+                        
+                    
+                </div>
+                <div class="catalog__goods goods">
+                    <div class="goods__item" data-gen="bosh" data-power="battery">
+                        <img class="goods__img" src="img/goods1.png"></img>
+                        <h3 class="goods__title">Перфоратор BOSCH
+                            KLC 679</h3>
+                        <p class="goods__price-old">74500 Р.</p>
+                        <a href="#" class="goods__price buy">62500 Р.</a>
+                    </div>
+                
+                
+                    <div class="goods__item" data-gen="hitachi" data-power="net">
+                        <img class="goods__img" src="img/goods1.png"></img>
+                        <h3 class="goods__title">Перфоратор HITACHI
+                            LBP 146</h3>
+                        <p class="goods__price-old">64500 Р.</p>
+                        <a href="#" class="goods__price buy">29500 Р.</a>
+                    </div>
+                
+                
+                    <div class="goods__item" data-gen="makita" data-power="battery">
+                        <img class="goods__img" src="img/goods1.png"></img>
+                        <h3 class="goods__title">Перфоратор Makita
+                            NRG 788</h3>
+                        <p class="goods__price-old">78500 Р.</p>
+                        <a href="#" class="goods__price buy">50500 Р.</a>
+                    </div>
+                
+                
+                    <div class="goods__item" data-gen="interskol" data-power="net">
+                        <img class="goods__img" src="img/goods1.png"></img>
+                        <h3 class="goods__title">Перфоратор ИНТЕРСКОЛ
+                            RU 231235</h3>
+                        <p class="goods__price-old">32500 Р.</p>
+                        <a href="#" class="goods__price buy">10500 Р.</a>
+                    </div>
+                   
+                    <div class="goods__item" data-gen="bosh" data-power="battery">
+                        <img class="goods__img" src="img/goods1.png"></img>
+                        <h3 class="goods__title">Перфоратор BOSCH
+                            YIK 380</h3>
+                        <p class="goods__price-old">65500 Р.</p>
+                        <a href="#" class="goods__price buy">37500 Р.</a>
+                    </div>
+                    <div class="goods__item" data-gen="dewalt" data-power="net">
+                        <img class="goods__img" src="img/goods1.png"></img>
+                        <h3 class="goods__title">Перфоратор Dewalt
+                            HRW 004</h3>
+                        <p class="goods__price-old">80999 Р.</p>
+                        <a href="#" class="goods__price buy">47500 Р.</a>
+                    </div>
+                    <div class="goods__item" data-gen="makita" data-power="battery">
+                        <img class="goods__img" src="img/goods1.png"></img>
+                        <h3 class="goods__title">Перфоратор Makita
+                            K451 890</h3>
+                        <p class="goods__price-old">40500 Р.</p>
+                        <a href="#" class="goods__price buy">32500 Р.</a>
+                    </div>
+                    <div class="goods__item" data-gen="bosh" data-power="net">
+                        <img class="goods__img" src="img/goods1.png"></img>
+                        <h3 class="goods__title">Перфоратор BOSCH
+                            ZJK 540</h3>
+                        <p class="goods__price-old">70500 Р.</p>
+                        <a href="#" class="goods__price buy">50500 Р.</a>
+                    </div>
+                    <div class="goods__item" data-gen="dewalt" data-power="battery">
+                        <img class="goods__img" src="img/goods1.png"></img>
+                        <h3 class="goods__title">Перфоратор Dewalt
+                            BFG 3000</h3>
+                        <p class="goods__price-old">30500 Р.</p>
+                        <a href="#" class="goods__price buy">20500 Р.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+
+
+    <section class="links">
+        <div class="container">
+            <div class="links__up up">
+                <h2 class="links__title"><a href="../index.html" class=" links__link-title">СТРОЙМИР</a></h2>
+                <nav class=" links__nav links__nav-up">
+                    <a href="../index.html">Компания</a>
+                    <a href="../index.html">Новости</a>
+                    <a href="../catalog/index-catalog.html">Каталог</a>
+                    <a href="../index.html">Доставка</a>
+                    <a href="../index.html">Контакты</a>
+                </nav>
+                <p class="links__address">
+                    г. Бийск, ул. Яминская, д. 31
+                    +7 (812) 555-05-55</p>
+                <nav class="links__nav links__nav-down">
+                    <a href="#">Материалы</a>
+                    <a href="#">Техника</a>
+                    <a href="#">Инструмент</a>
+                    <a href="#">Спецпредложения</a>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__down">
+                <div class="footer__copy">
+                    &copy; 2010–2019 Компания «Техномарт» <br>
+                    Все права защищены
+                </div>
+                <div class="footer__social">
+                    <a href="#" class="footer__link"></a>
+                    <a href="#" class="footer__link"></a>
+                    <a href="#" class="footer__link"></a>
+                </div>
+                <p class="footer__email">Обратная связь: <br>
+                    <span>lamoz760@gmail.com</span></p>
+                <p class="footer__dev">Разработано — <br>
+                    <span> Nick Efimov</span></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <div class="form form-offer">
+        <div class="form__container">
+            <form action="GET">
+                <label for="adress">Адрес доставки</label>
+                <input type="text" id="adress">
+
+                <label for="tel">Телефон для связи</label>
+                <input type="number" id="tel">
+                <button type="submit" disabled>Заказать</button>
+            </form>
+        </div>
+    </div> -->
+    <button class="up-button " type="button">
+        ↑
+        
+      </button>
+      
+    <script src="js/buttonUp.js"></script>
+    <script src="js/sort.js"></script>
+</body>
+
+</html>

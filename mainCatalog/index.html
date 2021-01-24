@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StroyWorld</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="../basket/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body class="page">
+    <header class="header">
+        <div class="container">
+            <h2 class="header__title"><a href="../index.html" class="header__link-title">СТРОЙМИР</a></h2>
+            <form action="GET">
+                <input type="search" name="search" placeholder="Поиск:" value="">
+            </form>
+            <ul class="header__links">
+                <li class="header__link favorits">Закладки: <div class="favorits"></div>
+                </li>
+                <li class="header__link buys">Корзина:<div class="buys"></div>
+                </li>
+                <li class="header__link-offer">Оформить заказ: </li>
+            </ul>
+
+
+    </header>
+    <section class="contacts">
+        <div class="container">
+            <p class="contacts__promo">Интернет-магазин
+                строительных материалов
+                и инструментов для ремонта</p>
+            <div class="contacts__info">
+                <a href="tel:+7 (3854) 33 22 11" class="contacts__tel">+7 (3854) 555-05-55</a>
+                <p class="contacts__address">г. Бийск, ул. Яминская, д. 31</p>
+            </div>
+            <div class="contacts__user user">
+                <p class="user__name">Равшан Джамшутович</p>
+                <div class="user__information">
+                    <a class="user__link" href="../basket/index.html">Мои заказы</a>
+                    <span></span>
+                    <a class="user__link" href="../profile/index.html">Личный кабинет</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- //forms registration -->
+
+        <div class="contacts__form form logIn">
+            <div class="form__container">
+                <form action="POST">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name">
+
+                    <label for="pas">Пароль</label>
+                    <input type="password" id="pas">
+                    <button type="submit" disabled>Войти</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="contacts__form form signIn">
+            <div class="form__container">
+                <form action="POST">
+                    <label for="name1">Имя</label>
+                    <input type="text" id="name1">
+                    <label for="email2">Email</label>
+                    <input type="email" id="email2">
+                    <label for="pas2">Пароль</label>
+                    <input type="password" id="pas2">
+                    <button type="submit" disabled>Зарегистрировать</button>
+                </form>
+            </div>
+
+        </div>
+        <!-- //log in -->
+
+    </section>
+    <nav class="main__nav nav">
+        <div class="container">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="../index.html" class="nav__link">Главная</a></li>
+                <li class="nav__item"><a href="../index.html" class="nav__link">Компания</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
+                <li class="nav__item"><a href="../index.html" class="nav__link">Новости</a></li>
+                <li class="nav__item"><a href="../index.html" class="nav__link">Спецпредложения</a></li>
+                <li class="nav__item"><a href="../index.html" class="nav__link">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="mainCatalog">
+        <div class="container">
+            <div class="mainCatalog__navigations navigations">
+                <div class="navigations__item ">
+                    <p class="navigations__description">
+                        Инструменты
+                    </p>
+                </div>
+                <div class="navigations__item">
+                    <p class="navigations__description">
+                        Материалы
+                    </p>
+                    
+                </div>
+                <div class="navigations__item">
+                    <p class="navigations__description">
+                        Техника
+                    </p>
+                </div>
+            </div>
+            <nav class="catalog__nav navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__link">
+                        <a href="#"> Каталог</a>
+                    </li>
+                    <li class="navigation__link">
+                        <a href="#">Материалы</a>
+                    </li>
+                    <li class="navigation__link">
+                        <a href="#">Все товары</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mainCatalog__content market">
+            <h2 class="market__title">Все товары</h2>
+                <div class="market__content">
+                    <div class="market__filters filters">
+                        <div class="filters__links">
+                            <a href="" class="filters__link">Сухие смеси и грунтовки</a> <br>
+                            <a href="" class="filters__link">Изоляционные материалы</a><br>
+                            <a href="" class="filters__link">Листовые материалы</a><br>
+                            <a href="" class="filters__link">Блоки для строительства</a><br>
+                            <a href="" class="filters__link">Металлопрокат</a><br>
+                            <a href="" class="filters__link">Водосточные и дренажные системы</a><br>
+                            <a href="" class="filters__link">Подвесные потолки</a><br>
+                            <a href="" class="filters__link">Строительное оборудование</a><br>
+                            <a href="" class="filters__link">Наружная канализация</a><br>
+                            <a href="" class="filters__link">Дорожные покрытия</a><br>
+                            <a href="" class="filters__link">Облицовочные материалы</a>
+                        </div>
+                        
+                    </div>
+                    <div class="market__sort">
+                        <p>Cортировать:   </p>
+                        <select name="sort__values" id="">
+                            <option value="Up">По возрастанию</option>
+                            <option value="Down">По убыванию</option>
+                            <option value="Requerid" selected>Рекомендуем</option>
+
+                        </select>
+                    </div>
+                    <div class="market__items">
+                        <div class="market__item">
+                            <img src="https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_278,h_278,c_pad,b_white,d_photoiscoming.png/LMCode/10073940.jpg" alt="">
+                            <p class="market__articul">Арт. 10073940</p>
+                            <p class="market__itemTitle">Штукатурка гипсовая Knauf Ротбанд 30 кг</p>
+                            <p class="market__price">415 Р./шт.</p>
+                            <button class="market__button">В корзину</button>
+                        </div>
+                        <div class="market__item">
+                            <img src="https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_278,h_278,c_pad,b_white,d_photoiscoming.png/LMCode/13581000.jpg" alt="">
+                            <p class="market__articul">Арт. 13581000</p>
+                            <p class="market__itemTitle">Блок газобетонный D500 600х250х100 мм</p>
+                            <p class="market__price">72 Р./шт.</p>
+                            <button class="market__button">В корзину</button>
+                        </div>
+                        <div class="market__item">
+                            <img src="https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_278,h_278,c_pad,b_white,d_photoiscoming.png/LMCode/10072745.jpg" alt="">
+                            <p class="market__articul">Арт. 10690746</p>
+                            <p class="market__itemTitle">Гипсокартон влагостойкий 12.5 мм Knauf 2500х1200 мм 3 м²</p>
+                            <p class="market__price">358 Р./шт.</p>
+                            <button class="market__button">В корзину</button>
+                        </div>
+                        <div class="market__item">
+                            <img src="https://res.cloudinary.com/lmru/image/upload/f_auto,q_90,h_240,c_pad,b_white,d_photoiscoming.png/LMCode/12757510.jpg" alt="">
+                            <p class="market__articul">Арт. 12757510</p>
+                            <p class="market__itemTitle">Грунтовка глубокого проникновения Ceresit CT17 10 л</p>
+                            <p class="market__price">772 Р./шт.</p>
+                            <button class="market__button">В корзину</button>
+                        </div>
+                        <div class="market__item">
+                            <img src="https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_278,h_278,c_pad,b_white,d_photoiscoming.png/LMCode/11756305.jpg" alt="">
+                            <p class="market__articul">Арт. 11756305</p>
+                            <p class="market__itemTitle">Профнастил С8 0.35 мм 1200х2000 мм зелёный RAL 6005</p>
+                            <p class="market__price">746 Р./шт.</p>
+                            <button class="market__button">В корзину</button>
+                        </div>
+                        <div class="market__item">
+                            <img src="https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_278,h_278,c_pad,b_white,d_photoiscoming.png/LMCode/18366490.jpg" alt="">
+                            <p class="market__articul">Арт. 10073940</p>
+                            <p class="market__itemTitle">Плитка декоративная гипсовая Лофт Брик, цвет белый, 1.04 м2</p>
+                            <p class="market__price">798 Р./шт.</p>
+                            <button class="market__button">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+
+    <section class="links">
+        <div class="container">
+            <div class="links__up up">
+                <h2 class="links__title"><a href="../index.html" class=" links__link-title">СТРОЙМИР</a></h2>
+                <nav class=" links__nav links__nav-up">
+                    <a href="../index.html">Компания</a>
+                    <a href="../index.html">Новости</a>
+                    <a href="../catalog/index-catalog.html">Каталог</a>
+                    <a href="../index.html">Доставка</a>
+                    <a href="../index.html">Контакты</a>
+                </nav>
+                <p class="links__address">
+                    г. Бийск, ул. Яминская, д. 31
+                    +7 (812) 555-05-55</p>
+                <nav class="links__nav links__nav-down">
+                    <a href="#">Материалы</a>
+                    <a href="#">Техника</a>
+                    <a href="#">Инструмент</a>
+                    <a href="#">Спецпредложения</a>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__down">
+                <div class="footer__copy">
+                    &copy; 2010–2019 Компания «Техномарт» <br>
+                    Все права защищены
+                </div>
+                <div class="footer__social">
+                    <a href="#" class="footer__link"></a>
+                    <a href="#" class="footer__link"></a>
+                    <a href="#" class="footer__link"></a>
+                </div>
+                <p class="footer__email">Обратная связь: <br>
+                    <span>lamoz760@gmail.com</span></p>
+                <p class="footer__dev">Разработано — <br>
+                    <span> Nick Efimov</span></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <div class="form form-offer">
+        <div class="form__container">
+            <form action="GET">
+                <label for="adress">Адрес доставки</label>
+                <input type="text" id="adress">
+
+                <label for="tel">Телефон для связи</label>
+                <input type="number" id="tel">
+                <button type="submit" disabled>Заказать</button>
+            </form>
+        </div>
+    </div> -->
+    
+      
+    <script src="js/buttonUp.js"></script>
+    <script src="js/sort.js"></script>
+</body>
+
+</html>
